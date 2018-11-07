@@ -59,7 +59,7 @@ cd mandelbrot-calc
 ### RabbitMQ (Terminal 1)
 The easiest way to start RabbitMQ is to use the following docker command
 
-```docker run -p 5672:5672 -p 15672:15672 rabbitmq:3.6-management```
+```docker run -d -p 5672:5672 -p 15672:15672 rabbitmq:3.6-management```
 
 # Reproducing the Deadlock
 
