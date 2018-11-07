@@ -30,6 +30,16 @@ To create the virtual environment, use the following commands
 ```bash
 cd celery-example
 virtualenv venv
+source venv/bin/activate
+pip install celery
+pip install numpy
+pip install JPype1 (or you can build it from source)
+``` 
+or (on Amazon AMI)
+```bash
+cd celery-example
+python3 -m venv venv
+source venv/bin/activate
 pip install celery
 pip install numpy
 pip install JPype1 (or you can build it from source)
@@ -38,7 +48,8 @@ pip install JPype1 (or you can build it from source)
 ### Java
 This has been reproduced with Oracle jdk8 update 172 and OpenJDK 10 on a OSX High Sierra (10.13.6) 
 
-The source for the mandelbrot calculation is included in this repository in the mandelbrot-calc directory.
+The library included is already compiled.  In the event that you want to mess with the java
+side, I have included the source for the mandelbrot calculation in the mandelbrot-calc directory.
 To build it, issue the following commands:
 ```
 cd mandelbrot-calc
