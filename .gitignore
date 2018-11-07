@@ -1,0 +1,3 @@
+.idea
+celery-example/venv
+celery-example/__pycache__
